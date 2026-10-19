@@ -1,0 +1,10 @@
+Drill 11: Jamf vs. Okta Verify drift report.
+Rows: Jamf 6,012, Okta 5,869
+Blank serials skipped: Jamf 2, Okta 3
+Serials listed more than once (after normalizing): Jamf 10, Okta 41
+Devices in both: 5,725
+In Jamf, missing from Okta Verify: 275
+In Okta, not in Jamf: 100
+Joining on raw serials would report 447 missing: 172 false alarms from case and whitespace
+A plain inner join returns 5,775 rows for 5,725 devices (+50 from duplicate keys)
+Wrote drift_report.csv (6,100 rows)

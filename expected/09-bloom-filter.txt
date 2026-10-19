@@ -1,0 +1,5 @@
+Drill 9: Bloom filter sized for 100,000 items at 1% false positives.
+m = 958,506 bits (117 KiB), k = 7 hash functions
+False negatives on the 100,000 inserted ids: 0 (must be 0)
+False positives on 100,000 ids never inserted: 992 = 0.992%   predicted 1.004%
+Overfilled to 200,000 items: 15,848 = 15.848%   predicted 15.745%

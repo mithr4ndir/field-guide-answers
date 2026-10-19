@@ -1,0 +1,7 @@
+Drill 6: caching. 100,000 requests: 70% Zipf over 10,000 objects, 30% one-hit wonders.
+cache size      LRU (library)   LRU (hand-built)    SIEVE  SIEVE vs LRU
+       100             23.47%             23.47%   34.54%  +11.07 points
+     1,000             41.20%             41.20%   48.61%  +7.41 points
+Both LRU implementations agree: yes
+without single-flight: 10 callers -> 10 backend calls, all got the same value: yes
+with single-flight:    10 callers -> 1 backend call, all got the same value: yes

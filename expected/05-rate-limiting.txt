@@ -1,0 +1,9 @@
+Drill 5: token bucket rate limiter.
+Part 1, fake clock: rate 4/s, burst 8, one request every 1/16 s for 4 s (# allowed, . denied)
+  second 0: ##########..#...  11 allowed
+  second 1: #...#...#...#...   4 allowed
+  second 2: #...#...#...#...   4 allowed
+  second 3: #...#...#...#...   4 allowed
+  total allowed: 23 of 64 (burst 8 + about 4/s x 4 s)
+Part 2, real clock: 20 calls at 10/s with burst 5
+Part 3, Okta headers: 40 of 600 calls left, window resets in 12 s -> pause 12 s

@@ -1,0 +1,5 @@
+Drill 10: binary search and bisection.
+Part 1: first bad commit among 500 is 337, found in 9 tests (log2(500) is about 9)
+  tested: 250, 375, 313, 344, 329, 337, 333, 335, 336
+Part 2: largest batch the API accepts is 437, found in 14 probes of the range 1..10,000
+  probed: 5001, 2501, 1251, 626, 313, 470, 392, 431, 451, 441, 436, 439, 438, 437

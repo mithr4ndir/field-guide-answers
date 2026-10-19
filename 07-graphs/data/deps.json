@@ -1,0 +1,20 @@
+{
+  "AdobeAcrobatReader": [],
+  "ChromeEnterprisePolicy": ["GoogleChrome"],
+  "CompanyPortal": ["MicrosoftAutoUpdate"],
+  "DefenderOnboarding": ["MicrosoftDefender"],
+  "DeviceAssuranceProfile": ["OktaVerify"],
+  "GoogleChrome": [],
+  "MicrosoftAutoUpdate": [],
+  "MicrosoftDefender": ["MicrosoftAutoUpdate", "NetworkExtensionProfile"],
+  "MicrosoftExcel": ["MicrosoftAutoUpdate", "MicrosoftLicensingHelper"],
+  "MicrosoftLicensingHelper": [],
+  "MicrosoftOutlook": ["MicrosoftAutoUpdate", "MicrosoftLicensingHelper"],
+  "MicrosoftTeams": ["MicrosoftAutoUpdate"],
+  "MicrosoftWord": ["MicrosoftAutoUpdate", "MicrosoftLicensingHelper"],
+  "NetworkExtensionProfile": [],
+  "OktaVerify": [],
+  "Slack": [],
+  "VPNClient": ["NetworkExtensionProfile"],
+  "Zoom": []
+}

@@ -1,0 +1,6 @@
+Drill 2: consistent hashing. 100,000 keys, cluster grows from 10 to 11 nodes.
+hash % N   moved 90,959 keys (91.0%)   expect ~90.9% (10 of 11)
+hash ring  moved  9,064 keys (9.1%)    expect ~9.1% (1 of 11)
+Every key that moved on the ring went to node-10: yes
+Keys per node, 11 nodes x 160 vnodes: min 7,673  max 9,653  (ideal 9,091)
+Keys per node, 11 nodes x 1 vnode:    min 272  max 30,914  (why virtual nodes matter)

@@ -1,0 +1,31 @@
+Drill 7: graphs. 18 packages from deps.json.
+All requirements refer to known packages: yes
+Install order (Kahn's algorithm):
+   1. AdobeAcrobatReader
+   2. GoogleChrome
+   3. ChromeEnterprisePolicy
+   4. MicrosoftAutoUpdate
+   5. CompanyPortal
+   6. MicrosoftLicensingHelper
+   7. MicrosoftExcel
+   8. MicrosoftOutlook
+   9. MicrosoftTeams
+  10. MicrosoftWord
+  11. NetworkExtensionProfile
+  12. MicrosoftDefender
+  13. DefenderOnboarding
+  14. OktaVerify
+  15. DeviceAssuranceProfile
+  16. Slack
+  17. VPNClient
+  18. Zoom
+Every package comes after everything it requires: yes
+Installing DefenderOnboarding pulls in (BFS over requires):
+  level 1: MicrosoftDefender
+  level 2: MicrosoftAutoUpdate, NetworkExtensionProfile
+If MicrosoftAutoUpdate breaks, these are affected (BFS over reversed edges):
+  level 1: CompanyPortal, MicrosoftDefender, MicrosoftExcel, MicrosoftOutlook, MicrosoftTeams, MicrosoftWord
+  level 2: DefenderOnboarding
+Added a cycle: MicrosoftAutoUpdate now requires MicrosoftWord.
+Kahn's algorithm placed 10 of 18 packages. Stuck (8): CompanyPortal, DefenderOnboarding, MicrosoftAutoUpdate, MicrosoftDefender, MicrosoftExcel, MicrosoftOutlook, MicrosoftTeams, MicrosoftWord
+DFS found the cycle: MicrosoftAutoUpdate -> MicrosoftWord -> MicrosoftAutoUpdate

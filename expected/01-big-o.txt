@@ -1,0 +1,2 @@
+Drill 1: Big-O. Reconcile N Jamf devices against N Okta devices (every 20th missing from Okta).
+Missing devices found: n=100 -> 5, n=1,000 -> 50, n=6,000 -> 300 (both methods agree)

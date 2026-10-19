@@ -1,0 +1,5 @@
+Drill 3: queues and backpressure. 50 items, producer every 20 ms, consumer 60 ms/item, queue holds 5.
+block        lost 0, in order: yes
+drop_newest  delivered + dropped = 50: yes, ids 0-4 all delivered: yes (the queue still has room when they arrive)
+drop_oldest  delivered + dropped = 50: yes, last delivered id: 49 (the newest item always survives)
+spill        lost 0, in order: yes
