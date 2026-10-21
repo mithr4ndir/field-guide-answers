@@ -1,8 +1,14 @@
 # Systems Algorithms Field Guide: answer key
 
 Reference solutions for every drill in the Field Guide, in Python, PowerShell 7 and Go.
-Try each drill yourself first, then compare. The Answer guide tab in the Field Guide
-has the expected output and what a correct answer shows for each one.
+Try each drill yourself first, then compare.
+
+## Start here
+
+- [FIELD-GUIDE.md](FIELD-GUIDE.md): the eleven topics, each with the core idea, a fleet example, the failure mode, and the drill. The nine-week plan is at the end.
+- [ANSWER-GUIDE.md](ANSWER-GUIDE.md): expected output and what a correct answer shows, drill by drill.
+
+Both are snapshots of the Field Guide doc; the doc stays the editable original.
 
 ## Requirements
 
